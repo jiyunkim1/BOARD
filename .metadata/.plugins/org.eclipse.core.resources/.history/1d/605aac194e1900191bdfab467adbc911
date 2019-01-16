@@ -1,0 +1,65 @@
+package org.jiyunkim1.domain;
+
+import java.util.Date;
+
+public class PostVO {
+	
+	private Integer postId;
+	private String postTitle;
+	private String userId;
+	private Date postDate;
+	private String postContent;
+	private Integer viewcnt;
+	
+
+	public Integer getpostId() {
+		return postId;
+	}
+	
+	public String getPostTitle() {
+		return postTitle;
+	}
+	
+	public String getuserId() {
+		return userId;
+	}
+	
+	public Date getpostDate() {
+		return postDate;
+	}
+	
+	public String getpostContent() {
+		return postContent;
+	}
+	
+	public Integer getviewcnt() {
+		return viewcnt;
+	}
+	
+	
+	public void setpostId(Integer id) {
+		this.postId = id;
+	}
+	
+	public void setpostTitle(String title) {
+		this.postTitle = title;
+	}
+	
+	public void setuserId(String userid) {
+		this.userId = userid;
+	}
+	
+	public void setpostDate(Date date) {
+		this.postDate = date;
+	}
+	
+	public void setpostContent(String content) {
+		this.postContent = content;
+	}
+	
+	public void setviewcnt() {
+		this.viewcnt = 0;
+	}
+		
+
+}

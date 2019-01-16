@@ -1,0 +1,11 @@
+package org.jiyunkim1.persistence;
+
+import org.jiyunkim1.domain.PostVO;
+
+public interface PostDAO {
+	
+	public abstract String getTime();
+	
+	public abstract void insertPost(PostVO vo);
+
+}

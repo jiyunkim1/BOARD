@@ -1,0 +1,6 @@
+package org.jiyunkim1.persistence;
+
+
+public interface PostDAO {
+	
+}

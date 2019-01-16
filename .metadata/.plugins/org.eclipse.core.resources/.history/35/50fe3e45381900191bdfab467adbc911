@@ -1,0 +1,41 @@
+package org.jiyunkim1.controller;
+
+import javax.inject.Inject;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.persistence.PostDAO;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(
+		locations= {"file:src/main/webapp/WEB-INF/spring/**/root-context.xml"})
+
+public class PostDAOTest {
+	
+	@Inject
+	private PostDAO dao;
+	
+	@Test 
+	public void testTime()throws Exception{
+		
+		System.out.println(dao.getTime());
+	}
+	
+	@Test
+	public void testInsertPost() throws Exception{
+		
+		PostVO vo = new PostVO();
+		vo.setpostId(0);
+		vo.setpostTitle("Title");
+		vo.setpostContent("Content");
+		vo.setuserId("user00");
+		vo.setviewcnt();
+		
+		dao.insertPost(vo);
+		
+	}
+	
+	
+}
