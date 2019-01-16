@@ -22,6 +22,9 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="org.jiyunkim1.controller" />
+	<context:component-scan base-package="org.jiyunkim1.domain" />
+	<context:component-scan base-package="org.jiyunkim1.persistence" />
+	<context:component-scan base-package="org.jiyunkim1.service" />
 	
 	
 	
