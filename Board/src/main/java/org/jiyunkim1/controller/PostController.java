@@ -36,7 +36,14 @@ public class PostController {
 		
 		model.addAttribute("result", "success");
 		
-		return "/post/success";
+		//return "/post/success";
+		return "redirect:/post/listAll";
+	}
+	
+	@RequestMapping(value = "/listAll", method=RequestMethod.GET)
+	public void listAll(Model model) throws Exception {
+		
+		logger.info("show all list...............");
 	}
 
 }

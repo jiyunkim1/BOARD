@@ -1,0 +1,9 @@
+<table class="table table-bordered">
+<tr>
+<th style="width: 10px">POSTID</th>
+<th>TITLE/<th>
+<th>WRITER</th>
+<th>POSTDATE</th>
+<th style="width: 40px">VIEWCNT</th>
+</tr>
+</table>

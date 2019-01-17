@@ -1,0 +1,15 @@
+<div class="box-body">   
+    <table class="table table-bordered">
+	<tr>
+	<th style="width: 10px">POSTID</th>
+	<th>TITLE/<th>
+	<th>WRITER</th>
+	<th>DATE</th>
+	<th style="width: 40px">VIEW COUNT</th>
+	</tr>
+	</table>
+	</div> 
+	
+	<script>
+	
+	var</script>

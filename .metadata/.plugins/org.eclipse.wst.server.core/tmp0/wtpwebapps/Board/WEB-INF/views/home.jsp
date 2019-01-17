@@ -10,13 +10,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
+        Bulletin Board
         <small>Optional description</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -25,7 +21,24 @@
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-
+        
+    <div class="container">
+    <form id="postForm" name="postForm" method="POST"> 
+    <table class="table table-striped table-hover">
+    <thead>
+	<tr>
+	<th style="width: 10px">POSTID</th>
+	<th>TITLE/<th>
+	<th>WRITER</th>
+	<th>DATE</th>
+	<th style="width: 40px">VIEW COUNT</th>
+	</tr>
+	</thead>
+	</table>
+	</form>
+	</div> 
+	
+	
     </section>
     <!-- /.content -->
   </div>

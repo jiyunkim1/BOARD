@@ -115,3 +115,15 @@
 0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:15:38 +0900] "GET /controller/resources/dist/js/adminlte.min.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:15:38 +0900] "GET /controller/dist/img/user2-160x160.jpg HTTP/1.1" 404 1047
 0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:15:38 +0900] "GET /controller/resources/bower_components/font-awesome/fonts/fontawesome-webfont.eot? HTTP/1.1" 304 -
+127.0.0.1 - - [16/Jan/2019:18:19:25 +0900] "GET / HTTP/1.1" 200 16099
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:39 +0900] "GET / HTTP/1.1" 200 16099
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:39 +0900] "GET /resources/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:39 +0900] "GET /resources/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:39 +0900] "GET /resources/bower_components/Ionicons/css/ionicons.min.css HTTP/1.1" 200 51284
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/dist/css/AdminLTE.min.css HTTP/1.1" 200 91475
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/dist/css/skins/skin-blue.min.css HTTP/1.1" 200 3156
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/dist/js/adminlte.min.js HTTP/1.1" 200 14478
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /dist/img/user2-160x160.jpg HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [16/Jan/2019:18:19:40 +0900] "GET /resources/bower_components/font-awesome/fonts/fontawesome-webfont.eot? HTTP/1.1" 200 165742
