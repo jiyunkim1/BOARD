@@ -19,21 +19,21 @@
 <div class='box-body'>
 <table class="table table-bordered">
 <tr>
-<th style="width:40px">PostId</th>
+<th style="width:40px">POSTID</th>
 <th>TITLE</th>
 <th>WRITER</th>
 <th>DATE</th>
 <th style="width:40px">VIEWCOUNT</th>
 </tr>
 
-<c:forEach items="${list}" var="PostVO">
+<c:forEach items="${list}" var="postVO">
 
 <tr>
-<td>${PostVO.postId}</td>
-<td><a href='/post/read?postId=${PostVO.postId}'>${PostVO.postTitle }</a></td>
-<td>${PostVO.userId}</td>
-<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${PostVO.postDate }" /></td>
-<td><span class="badge bg-yellow">${PostVO.viewcnt}</span></td>
+<td>${postVO.postId}</td>
+<td><a href='/post/read?postId=${postVO.postId}'>${postVO.postTitle }</a></td>
+<td>${postVO.userId}</td>
+<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${postVO.postDate }" /></td>
+<td><span class="badge bg-yellow">${postVO.viewcnt}</span></td>
 </tr>
 
 </c:forEach>
@@ -58,7 +58,7 @@
 var result='${msg}';
 
 if(result=='SUCCESS'){
-alert("Finished successfully.");
+alert("Updated successfully.");
 }
 
 </script>

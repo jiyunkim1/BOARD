@@ -25,8 +25,13 @@ readonly="readonly">
 </div>
 
 <div class="form-group">
-<label for="examplueInputEmail1">TITLE</label><input type="text"
+<label for="exampleInputEmail1">TITLE</label><input type="text"
 name='postTitle' class="form-control" value="${postVO.postTitle}">
+</div>
+
+<div class="form-group">
+<label for="exampleInputPassword1">CONTENT</label>
+<textarea class="form-control" name="postContent" rows="3">${postVO.postContent}</textarea>
 </div>
 
 <div class="form-group">
@@ -36,7 +41,6 @@ value="${postVO.userId}">
 </div>
 </div>
 <!--/.box-body -->
-
 </form>
 
 <div class="box-footer">

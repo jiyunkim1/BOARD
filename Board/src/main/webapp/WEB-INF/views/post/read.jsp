@@ -1,4 +1,4 @@
-<%@ page languague="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <%@include file="../include/header.jsp" %>
 
@@ -30,7 +30,7 @@ readonly="readonly">
 </div>
 <div class="form-group">
 <label for="exampleInputEmail1">WRITER</label> <input type="text"
-name="userId" class="Form-control" value="${postVO.userId}" readonly="readonly">
+name="userId" class="form-control" value="${postVO.userId}" readonly="readonly">
 </div>
 </div>
 <!-- /.box-body -->
@@ -38,7 +38,7 @@ name="userId" class="Form-control" value="${postVO.userId}" readonly="readonly">
 <div class="box-footer">
 <button type="submit" class="btn btn-warning">MODIFY</button>
 <button type="submit" class="btn btn-danger">REMOVE</button>
-<button type="submit" class="btn btn-primary">LIST ALL</button>
+<button type="submit" class="btn btn-primary">LIST</button>
 </div>
 
 <script>

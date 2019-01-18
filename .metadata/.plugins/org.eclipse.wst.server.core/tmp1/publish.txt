@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Wed Jan 16 17:54:30 KST 2019
+#Fri Jan 18 15:03:11 KST 2019
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\jiyunkim1\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\Spring Tool Suite 3.9.3\\sts-bundle\\pivotal-tc-server-developer-3.2.9.RELEASE\\base-instance\\wtpwebapps\\Board\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
 org.eclipse.jst.jee.server\:Board=C\:\\Spring Tool Suite 3.9.3\\sts-bundle\\pivotal-tc-server-developer-3.2.9.RELEASE\\base-instance\\wtpwebapps\\Board
