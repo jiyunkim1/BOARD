@@ -9,4 +9,5 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
 </qualifiedTypeNameHistroy>

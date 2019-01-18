@@ -9,7 +9,9 @@ public class PostVO {
 	private String userId;
 	private Date postDate;
 	private String postContent;
-	private Integer viewcnt;
+	private int viewcnt;
+	
+	
 	public Integer getPostId() {
 		return postId;
 	}
@@ -43,8 +45,14 @@ public class PostVO {
 	public Integer getViewcnt() {
 		return viewcnt;
 	}
-	public void setViewcnt(Integer viewcnt) {
+	public void setViewcnt(int viewcnt) {
 		this.viewcnt = viewcnt;
-	}		
+	}
+	
+	@Override
+	public String toString() {
+		return "PostVO [postId=" + postId + ", title=" + postTitle + ",content="
+				+postContent + ", writer=" + userId + ", date=" + postDate + ", viewcount=" + viewcnt + "]";
+	}
 
 }

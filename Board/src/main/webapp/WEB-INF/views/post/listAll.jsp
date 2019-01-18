@@ -14,12 +14,12 @@
 <!--  general form elements -->
 <div class='box'>
 <div class="box-header with-border">
-<h3 class="box-title">Post List</h3>
+<h3 class="box-title">POST LIST</h3>
 </div>
 <div class='box-body'>
 <table class="table table-bordered">
 <tr>
-<th style="width:10px">PostId</th>
+<th style="width:40px">PostId</th>
 <th>TITLE</th>
 <th>WRITER</th>
 <th>DATE</th>
@@ -29,10 +29,11 @@
 <c:forEach items="${list}" var="PostVO">
 
 <tr>
-<td>${PostVO.PostId}</td>
+<td>${PostVO.postId}</td>
 <td><a href='/post/read?postId=${PostVO.postId}'>${PostVO.postTitle }</a></td>
-<td>${PostVO.writer}</td>
+<td>${PostVO.userId}</td>
 <td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${PostVO.postDate }" /></td>
+<td><span class="badge bg-yellow">${PostVO.viewcnt}</span></td>
 </tr>
 
 </c:forEach>

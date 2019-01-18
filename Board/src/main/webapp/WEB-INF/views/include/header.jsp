@@ -3,18 +3,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>BoardProject | Jiyun</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="/resources/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/resources/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/resources/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/resources/bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="/resources/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/resources/bower_components/Ionicons/css/ionicons.min.css" type="text/css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/resources/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/resources/dist/css/AdminLTE.min.css" type="text/css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -34,14 +34,14 @@
 
 <!-- jQuery 2.1.4 -->
 <script src="/resources/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="skin-blue sidebar-mini">
 <div class="wrapper">
 
   <!-- Main Header -->
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>B</b>PJ</span>
       <!-- logo for regular state and mobile devices -->
@@ -76,7 +76,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -258,3 +258,19 @@
     <!-- /.sidebar -->
   </aside>
   --%>
+  
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Bulletin Board
+        <small>Post something!</small>
+      </h1>
+      <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+      <li><a href="#">Forms</a></li>
+      <li class="active">General Elements</li>
+      </ol>
+    </section>

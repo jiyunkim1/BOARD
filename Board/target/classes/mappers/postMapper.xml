@@ -6,7 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="org.jiyunkim1.mapper.postMapper">
 
 <insert id="create">
-insert into tbl_post(postTitle, postContent, userId)
+insert into tbl_post (postTitle, postContent, userId)
 values(#{postTitle}, #{postContent}, #{userId})
 </insert>
 
@@ -15,7 +15,7 @@ select
 postId, postTitle, postContent, userId, postDate, viewcnt
 from 
 tbl_post
-where postId = "#{postId}"
+where postId = #{postId}
 </select>
 
 <update id="update">
@@ -32,8 +32,8 @@ delete from tbl_post where postId = #{postId}
 select
 postId, postTitle, postContent, userId, postDate, viewcnt
 from
-tbl_psot
-wehre postID>0
+tbl_post
+where postId>0
 order by postId desc, postDate desc
 ]]>
 </select>
