@@ -10,7 +10,7 @@
 <!-- general form elements -->
 <div class="box box-primary">
 <div class="box-header">
-<h3 class="box-title">READ POSTS</h3>
+<h3 class="box-title">EDIT POSTS</h3>
 </div>
 <!-- /.box-header -->
 

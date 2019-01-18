@@ -76,7 +76,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="resources/dist/img/user-avatar.jpg" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -168,7 +168,7 @@
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="/resources/dist/img/user-avatar.jpg" class="img-circle" alt="User Image">
 
                 <p>Jiyun Kim</p>
               </li>

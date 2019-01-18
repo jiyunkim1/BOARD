@@ -33,7 +33,7 @@
 <td><a href='/post/read?postId=${postVO.postId}'>${postVO.postTitle }</a></td>
 <td>${postVO.userId}</td>
 <td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${postVO.postDate }" /></td>
-<td><span class="badge bg-yellow">${postVO.viewcnt}</span></td>
+<td><span class="badge bg-purple">${postVO.viewcnt}</span></td>
 </tr>
 
 </c:forEach>
@@ -41,7 +41,7 @@
 
 </div>
 <!-- /.box.body -->
-<div class="box-footer">Footer</div>
+<div class="box-footer">Bulletin Board</div>
 <!-- /.box-footer -->
 </div>
 </div>
