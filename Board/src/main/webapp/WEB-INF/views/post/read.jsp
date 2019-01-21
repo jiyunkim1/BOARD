@@ -36,8 +36,8 @@ name="userId" class="form-control" value="${postVO.userId}" readonly="readonly">
 <!-- /.box-body -->
 
 <div class="box-footer">
-<button type="submit" class="btn btn-warning">MODIFY</button>
-<button type="submit" class="btn btn-danger">REMOVE</button>
+<button type="submit" class="btn btn-danger">MODIFY</button>
+<button type="submit" class="btn btn-warning">REMOVE</button>
 <button type="submit" class="btn btn-primary">LIST</button>
 </div>
 
@@ -48,16 +48,17 @@ $(document).ready(function(){
 	
 	console.log(formObj);
 	
-	$(".btn-warning").on("click", function(){
+	$(".btn-danger").on("click", function(){
 		formObj.attr("action", "/post/modify");
 		formObj.attr("method", "get");
 		formObj.submit();
 	});
 	
-	$(".btn-danger").on("click", function(){
+	$(".btn-warning").on("click", function(){
 		formObj.attr("action", "/post/remove");
 		formObj.submit();
 	});
+
 	
 	$(".btn-primary").on("click", function(){
 		self.location = "/post/listAll";

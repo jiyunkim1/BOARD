@@ -38,4 +38,39 @@ order by postId desc, postDate desc
 ]]>
 </select>
 
+<select id="listPage" resultType="org.jiyunkim1.domain.PostVO">
+<![CDATA[
+select 
+postId, postTitle, postContent, userId, postDate, viewcnt
+from
+tbl_post
+where postId>0
+order by postId desc, postDate desc
+limit #{page}, 10
+]]>
+</select>
+
+<select id="listCriteria" resultType="org.jiyunkim1.domain.PostVO">
+<![CDATA[
+select
+postId, postTitle, postContent, userId, postDate, viewcnt
+from 
+tbl_post
+where postId>0
+order by postId desc, postDate desc
+limit #{pageStart}, #{perPageNum}
+]]>
+</select>
+
+<select id="countPaging" resultType="int">
+<![CDATA[
+select
+count(postId)
+from
+tbl_post
+where
+postId > 0
+]]>
+</select>
+
 </mapper>

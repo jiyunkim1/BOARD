@@ -16,10 +16,15 @@
             <div class="box-header with-border">
               <h3 class="box-title">HOME PAGE</h3>
             </div>
+            
+            <div class="box-footer">
+            <input type="button" value="+NEW POST" class = "btn btn-success" name="registerBtn" onclick = "location.href='/post/register'"></input>
+            <input type="button" value="GO TO LIST" class = "btn btn-warning" name="listBtn" onclick = "location.href='/post/listPage'"></input>
+            </div>
           </div>
       </div><!--/.col (left) -->
       </div>   <!-- /.row -->
     </section><!-- /.content -->
 
     
-
+<%@include file="include/footer.jsp" %>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 import org.springframework.stereotype.Service;
+import org.jiyunkim1.domain.Criteria;
 import org.jiyunkim1.domain.PostVO;
 import org.jiyunkim1.persistence.PostDAO;
 
@@ -34,6 +35,16 @@ public class PostServiceImpl implements PostService{
 	@Override
 	public List<PostVO> listAll() throws Exception {
 		return dao.listAll();
+	}
+	
+	@Override
+	public List<PostVO> listCriteria(Criteria cri) throws Exception {
+		return dao.listCriteria(cri);
+	}
+	
+	@Override
+	public int listCountCriteria(Criteria cri) throws Exception {
+		return dao.countPaging(cri);
 	}
 
 }

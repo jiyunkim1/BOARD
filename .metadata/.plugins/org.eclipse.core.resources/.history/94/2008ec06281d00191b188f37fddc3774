@@ -1,0 +1,21 @@
+package org.jiyunkim1.domain;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+import org.springframework.web.util.UriComponents;
+import org.springframework.web.util.UriComponentsBuilder;
+
+public class PageMaker {
+	
+	private int totalCount;
+	private int startPage;
+	private int endPage;
+	private boolean prev;
+	private boolean next;
+	
+	private int displayPageNum = 10;
+	
+	private Criteria cri;
+
+}
