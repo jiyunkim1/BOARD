@@ -22,7 +22,7 @@ public class PageMaker {
 		this.cri = cri;
 	}
 	
-	public void setTotalCount(int totalCount) {
+	public void setTotalCount(Integer totalCount) {
 		this.totalCount = totalCount;
 		
 		calcData();
@@ -54,7 +54,7 @@ public class PageMaker {
 		return startPage;
 	}
 
-	public int getEndPage() {
+	public Integer getEndPage() {
 		return endPage;
 	}
 	
@@ -66,7 +66,7 @@ public class PageMaker {
 		return next;
 	}
 
-	public int getDisplayPageNum() {
+	public Integer getDisplayPageNum() {
 		return displayPageNum;
 	}
 
@@ -82,6 +82,40 @@ public class PageMaker {
 				.build();
 		
 		return uriComponents.toUriString();
+	}
+	
+	public String makeSearch(int page) {
+		
+		UriComponents uriComponents = 
+				UriComponentsBuilder.newInstance()
+				.queryParam("page",  page)
+				.queryParam("perPageNum", cri.getPerPageNum())
+				.queryParam("searchType",  ((SearchCriteria)cri).getSearchType())
+				.queryParam("keyword", ((SearchCriteria)cri).getKeyword())
+				.build();
+		
+		return uriComponents.toUriString();
+	}
+	
+	private String encoding(String keyword) {
+		
+		if(keyword == null || keyword.trim().length() == 0) {
+			return "";
+		}
+		
+		try {
+			return URLEncoder.encode(keyword,  "UTF-8");
+		}catch (UnsupportedEncodingException e) {
+			return "";
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return "PageMaker [totalCount=" + totalCount + ", startPage=" 
+				+ startPage + ", endPage=" + endPage + ", prev=" + prev
+				+ ", next=" + next + ", displayPageNum" + displayPageNum
+				+ ", cri=" + cri + "]";
 	}
 	
 	

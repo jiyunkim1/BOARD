@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.domain.SearchCriteria;
 import org.jiyunkim1.persistence.PostDAO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -60,7 +61,7 @@ public class PostDAOTest {
 		
 		dao.delete((1));
 	}
-	*/
+	
 	@Test
 	public void testListPage()throws Exception{
 		
@@ -71,6 +72,27 @@ public class PostDAOTest {
 		for(PostVO postVO : list) {
 			logger.info(postVO.getPostId() + ":" + postVO.getPostTitle());
 		}
+	}
+	*/
+	@Test
+	public void testDynamic1() throws Exception {
+		
+		SearchCriteria cri = new SearchCriteria();
+		cri.setPage(1);;
+		cri.setKeyword("test");
+		
+		logger.info("====================================");
+		
+		List<PostVO> list = dao.listSearch(cri);
+		
+		for(PostVO postVO : list) {
+			logger.info(postVO.getPostId() + " : " + postVO.getPostTitle());
+			
+		}
+		
+		logger.info("=======================================");
+		
+		logger.info("COUNT : " + dao.listSearchCount(cri));
 	}
 	
 }

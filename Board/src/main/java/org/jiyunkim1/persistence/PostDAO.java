@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.jiyunkim1.domain.Criteria;
 import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.domain.SearchCriteria;
 
 public interface PostDAO {
 	
@@ -21,6 +22,12 @@ public interface PostDAO {
 	
 	public List<PostVO> listCriteria(Criteria cri)throws Exception;
 	
-	public int countPaging(Criteria cri)throws Exception;
+	public abstract Integer countPaging(Criteria cri)throws Exception;
+	
+	//dynamic SQL 
+	
+	public List<PostVO> listSearch(SearchCriteria cri)throws Exception;
+	
+	public int listSearchCount(SearchCriteria cri)throws Exception;
 
 }

@@ -1,7 +1,9 @@
 INDEX VERSION 1.130
+C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\729990463.index
+\Board\src\main\resources
+C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\645923994.index
+\Board\src\main\resources
 C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2952568192.index
 \Board\src\main\java
 C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3345598742.index
 \Board\src\main\java
-C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\729990463.index
-\Board\src\main\resources

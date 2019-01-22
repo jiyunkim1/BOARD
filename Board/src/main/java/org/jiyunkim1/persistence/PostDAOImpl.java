@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 import org.jiyunkim1.domain.Criteria;
 import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.domain.SearchCriteria;
 
 @Repository
 public class PostDAOImpl implements PostDAO{
@@ -59,10 +60,20 @@ public class PostDAOImpl implements PostDAO{
 	}
 	
 	@Override
-	public int countPaging(Criteria cri) throws Exception {
+	public Integer countPaging(Criteria cri) throws Exception {
 		
 		return session.selectOne(namespace+".countPaging", cri);
 	}
 	
+	@Override
+	public List<PostVO> listSearch(SearchCriteria cri) throws Exception{
+		
+		return session.selectList(namespace + ".listSearch", cri);
+	}
 	
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception{
+		
+		return session.selectOne(namespace + ".listSearchCount", cri);
+	}
 }

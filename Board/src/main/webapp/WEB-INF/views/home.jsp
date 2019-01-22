@@ -18,8 +18,10 @@
             </div>
             
             <div class="box-footer">
-            <input type="button" value="+NEW POST" class = "btn btn-success" name="registerBtn" onclick = "location.href='/post/register'"></input>
+            
             <input type="button" value="GO TO LIST" class = "btn btn-warning" name="listBtn" onclick = "location.href='/post/listPage'"></input>
+            <input type="button" value="+NEW POST" class = "btn btn-success" name="registerBtn" onclick = "location.href='/post/register'"></input>
+            
             </div>
           </div>
       </div><!--/.col (left) -->

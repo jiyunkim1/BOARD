@@ -40,7 +40,7 @@ public class PostController {
 		service.register(post);
 		
 		rttr.addFlashAttribute("msg", "success");
-		return "redirect:/post/listPage";
+		return "redirect:/post/listAll";
 	}
 	
 	@RequestMapping(value = "/listAll", method=RequestMethod.GET)
@@ -51,8 +51,8 @@ public class PostController {
 	}
 	
 	@RequestMapping(value="/read", method=RequestMethod.GET)
-	public void read(@RequestParam("postId") Integer postId, Model model)
-	throws Exception{
+	public void read(@RequestParam("postId") Integer postId, Model model)throws Exception{
+		
 		model.addAttribute(service.read(postId));
 	}
 	
@@ -93,7 +93,7 @@ public class PostController {
 	}
 	
 	@RequestMapping(value="/listPage", method = RequestMethod.GET)
-	public void listPage(@ModelAttribute("cri")Criteria cri, Model model)throws Exception{
+	public void listPage(@ModelAttribute("cri") Criteria cri, Model model)throws Exception{
 		
 		logger.info(cri.toString());
 		
@@ -106,6 +106,7 @@ public class PostController {
 		
 		model.addAttribute("pageMaker", pageMaker);
 	}
+	
 	
 	@RequestMapping(value="/readPage", method = RequestMethod.GET)
 	public void read(@RequestParam("postId") Integer postId, @ModelAttribute("cri") Criteria cri, Model model) throws Exception {
@@ -143,6 +144,7 @@ public class PostController {
 		
 		return "redirect:/post/listPage";
 	}
+	
 			
 
 }

@@ -2,15 +2,15 @@ package org.jiyunkim1.domain;
 
 public class Criteria {
 	
-	private int page;
-	private int perPageNum;
+	private Integer page;
+	private Integer perPageNum;
 	
 	public Criteria() {
 		this.page=1;
 		this.perPageNum = 10;
 	}
 	
-	public void setPage(int page) {
+	public void setPage(Integer page) {
 		
 		if(page <=0) {
 			this.page=1;
@@ -20,7 +20,7 @@ public class Criteria {
 		this.page=page;
 	}
 	
-	public void setPerPageNum(int perPageNum) {
+	public void setPerPageNum(Integer perPageNum) {
 		
 		if (perPageNum<=0 || perPageNum > 100) {
 			this.perPageNum = 10;
@@ -31,18 +31,18 @@ public class Criteria {
 		this.perPageNum=perPageNum;
 	}
 	
-	public int getPage() {
+	public Integer getPage() {
 		return page;
 	}
 	
 	//method for MyBatis SQL Mapper -
-	public int getPageStart() {
+	public Integer getPageStart() {
 		
 		return (this.page - 1) * perPageNum;
 	}
 	
 	//method for MyBatis SQL Mapper
-	public int getPerPageNum() {
+	public Integer getPerPageNum() {
 		
 		return this.perPageNum;
 	}

@@ -6,6 +6,7 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.jiyunkim1.domain.Criteria;
 import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.domain.SearchCriteria;
 import org.jiyunkim1.persistence.PostDAO;
 
 @Service
@@ -45,6 +46,18 @@ public class PostServiceImpl implements PostService{
 	@Override
 	public int listCountCriteria(Criteria cri) throws Exception {
 		return dao.countPaging(cri);
+	}
+	
+	@Override
+	public List<PostVO> listSearchCriteria(SearchCriteria cri) throws Exception {
+		
+		return dao.listSearch(cri);
+	}
+	
+	@Override
+	public int listSearchCount(SearchCriteria cri) throws Exception{
+		
+		return dao.listSearchCount(cri);
 	}
 
 }
