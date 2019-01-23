@@ -73,11 +73,51 @@ postId > 0
 ]]>
 </select>
 
+<sql id="search">
+<if test="searchType != null" >
+<if test="searchType == 't'.toString()">
+and postTitle like CONCAT('%', #{keyword}, '%')
+</if>
+
+<if test="searchType == 'c'.toString()">
+and postContent like CONCAT('%', #{keyword}, '%')
+</if>
+
+<if test="searchType == 'w'.toString()">
+and userId like CONCAT('%', #{keyword}, '%')
+</if>
+
+<if test="searchType == 'tc'.toString()">
+and (postTitle like CONCAT('%', #{keyword}, '%') OR postContent like CONCAT('%', #{keyword}, '%'))
+</if>
+
+<if test="searchType == 'cw'.toString()">
+and (postContent like CONCAT('%', #{keyword}, '%') OR userId like CONCAT('%', #{keyword}, '%'))
+</if>
+
+<if test="searchType == 'tcw'.toString()">
+and (postTitle like CONCAT('%', #{keyword}, '%') OR postContent like CONCAT('%', #{keyword}, '%') OR userId like
+CONCAT('%', #{keyword}, '%'))
+</if>
+</if>
+</sql>
+
 <select id="listSearch" resultType="org.jiyunkim1.domain.PostVO">
 <![CDATA[
 select *
 from tbl_post
 where postId > 0
+]]>
+
+
+<![CDATA[
+order by postId desc
+limit #{pageStart}, #{perPageNum}
+]]>
+
+<include refid="search"></include>
+
+<![CDATA[
 order by postId desc
 limit #{pageStart}, #{perPageNum}
 ]]>
@@ -89,6 +129,7 @@ select count(postId)
 from tbl_post
 where postId > 0
 ]]>
+<include refid="search"></include>
 </select>
 
 

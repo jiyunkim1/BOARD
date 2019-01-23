@@ -44,7 +44,7 @@ public class SearchPostController {
 	}
 	
 	@RequestMapping(value = "/readPage", method = RequestMethod.GET)
-	public void read(@RequestParam("bno") Integer postId, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+	public void read(@RequestParam("postId") Integer postId, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		
 		model.addAttribute(service.read(postId));
 		
@@ -66,9 +66,9 @@ public class SearchPostController {
 	  }
 
 	  @RequestMapping(value = "/modifyPage", method = RequestMethod.GET)
-	  public void modifyPagingGET(int bno, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+	  public void modifyPagingGET(int postId, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 
-	    model.addAttribute(service.read(bno));
+	    model.addAttribute(service.read(postId));
 	  }
 	  
 	  @RequestMapping(value = "/modifyPage", method = RequestMethod.POST)

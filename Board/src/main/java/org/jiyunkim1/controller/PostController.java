@@ -14,6 +14,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.jiyunkim1.domain.Criteria;
 import org.jiyunkim1.domain.PageMaker;
 import org.jiyunkim1.domain.PostVO;
+import org.jiyunkim1.domain.SearchCriteria;
 import org.jiyunkim1.service.PostService;
 
 @Controller
@@ -93,16 +94,18 @@ public class PostController {
 	}
 	
 	@RequestMapping(value="/listPage", method = RequestMethod.GET)
-	public void listPage(@ModelAttribute("cri")Criteria cri, Model model)throws Exception{
+	public void listPage(@ModelAttribute("cri")SearchCriteria cri, Model model)throws Exception{
 		
 		logger.info(cri.toString());
 		
-		model.addAttribute("list", service.listCriteria(cri));
+		//model.addAttribute("list", service.listCriteria(cri));
+		model.addAttribute("list", service.listSearchCriteria(cri));
+		
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
-		//pageMaker.setTotalCount(131);
 		
-		pageMaker.setTotalCount(service.listCountCriteria(cri));
+		//pageMaker.setTotalCount(service.listCountCriteria(cri));
+		pageMaker.setTotalCount(service.listSearchCount(cri));
 		
 		model.addAttribute("pageMaker", pageMaker);
 	}
