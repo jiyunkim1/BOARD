@@ -16,19 +16,19 @@
 
 <form role="form" action="modifyPage" method="post">
 
-<input type='hidden' name='page' value="${cri.page}"> <input type= 'hidden'
-name='perPageNum' value="${cri.perPageNum}">
+<input type='hidden' name='page' value="${cri.page}"> 
+<input type= 'hidden' name='perPageNum' value="${cri.perPageNum}">
 
 <div class="box-body">
 
 <div class="form-group">
-<label for="exampleInputEmail1">POSTID</label><input type="text"
-name='postId' class="form-control" value="${postVO.postId}" readonly="readonly">
+<label for="exampleInputEmail1">POSTID</label>
+<input type="text" name='postId' class="form-control" value="${postVO.postId}" readonly="readonly">
 </div>
 
 <div class="form-group">
-<label for="exampleInputEmail1">TITLE</label><input type="text"
-name='postTitle' class="form-control" value="${postVO.postTitle}">
+<label for="exampleInputEmail1">TITLE</label>
+<input type="text" name='postTitle' class="form-control" value="${postVO.postTitle}">
 </div>
 
 <div class="form-group"> <label for="exampleInputPassword1">CONTENT</label>

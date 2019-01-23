@@ -93,7 +93,7 @@ public class PostController {
 	}
 	
 	@RequestMapping(value="/listPage", method = RequestMethod.GET)
-	public void listPage(@ModelAttribute("cri") Criteria cri, Model model)throws Exception{
+	public void listPage(@ModelAttribute("cri")Criteria cri, Model model)throws Exception{
 		
 		logger.info(cri.toString());
 		

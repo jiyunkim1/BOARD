@@ -24,7 +24,7 @@ public interface PostDAO {
 	
 	public abstract Integer countPaging(Criteria cri)throws Exception;
 	
-	//dynamic SQL 
+	//Dynamic SQL 
 	
 	public List<PostVO> listSearch(SearchCriteria cri)throws Exception;
 	

@@ -67,7 +67,7 @@ $(document).ready(function(){
 	
 	$(".goListBtn").on("click", function(){
 		formObj.attr("method", "get");
-		formObj.attr("action", "/post/listPage");
+		formObj.attr("action", "/spost/list");
 		formObj.submit();
 	});
 	

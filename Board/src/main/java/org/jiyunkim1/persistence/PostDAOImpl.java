@@ -65,6 +65,7 @@ public class PostDAOImpl implements PostDAO{
 		return session.selectOne(namespace+".countPaging", cri);
 	}
 	
+	
 	@Override
 	public List<PostVO> listSearch(SearchCriteria cri) throws Exception{
 		

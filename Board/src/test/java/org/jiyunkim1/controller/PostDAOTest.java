@@ -22,7 +22,7 @@ public class PostDAOTest {
 	@Inject
 	private PostDAO dao;
 	
-	private static Logger logger= (Logger) LoggerFactory.getLogger(PostDAOTest.class);
+	private static org.slf4j.Logger logger= LoggerFactory.getLogger(PostDAOTest.class);
 	
 	/*
 	@Test
@@ -74,6 +74,7 @@ public class PostDAOTest {
 		}
 	}
 	*/
+	
 	@Test
 	public void testDynamic1() throws Exception {
 		
@@ -94,5 +95,7 @@ public class PostDAOTest {
 		
 		logger.info("COUNT : " + dao.listSearchCount(cri));
 	}
+	
+
 	
 }

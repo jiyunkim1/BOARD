@@ -69,14 +69,13 @@ value='${cri.keyword }'>
 
 <tr>
 <td>${postVO.postId}</td>
-<td><a href='/post/readPage${pageMaker.makeQuery(pageMaker.cri.page)}&postId=${postVO.postId}'>
-${postVO.postTitle}</a>
-</td>
+<td><a href='/spost/readPage${pageMaker.makeSearch(pageMaker.cri.page)}&postId=${postVO.postId}'>
+${postVO.postTitle}</a></td>
 <td>${postVO.userId}</td>
-<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" 
-value="${postVO.postDate}" /></td>
+<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${postVO.postDate}" /></td>
 <td><span class="badge bg-purple">${postVO.viewcnt}</span></td>
 </tr>
+
 </c:forEach>
 
 </table>
@@ -92,10 +91,8 @@ value="${postVO.postDate}" /></td>
 <li><a href="list${pageMaker.makeSearch(pageMaker.startPage - 1)}">&laquo;</a></li>
 </c:if>
 
-<c:forEach begin="${pageMaker.startPage }"
-end="${pageMaker.endPage }" var="idx">
-<li
-<c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
+<c:forEach begin="${pageMaker.startPage }" end="${pageMaker.endPage }" var="idx">
+<li <c:out value="${pageMaker.cri.page == idx?'class =active':''}"/>>
 <a href="list${pageMaker.makeSearch(idx)}">${idx}</a>
 </li>
 </c:forEach>
