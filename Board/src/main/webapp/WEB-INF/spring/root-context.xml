@@ -32,6 +32,11 @@
 	<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
 	</bean>
 	
+	<bean id="transactionManager"
+	class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
 	<context:component-scan base-package="org.jiyunkim1.persistence"></context:component-scan>
 	
 </beans>

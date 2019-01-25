@@ -30,7 +30,6 @@ INDEX VERSION 1.130+C:\Spring Tool Suite 3.9.3\Workspace\.metadata\.plugins\org.
 3358519364.index
 2870565527.index
 958380473.index
-2832075846.index
 1607282252.index
 1713295793.index
 3039820489.index

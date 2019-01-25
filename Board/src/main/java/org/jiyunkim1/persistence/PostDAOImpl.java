@@ -67,6 +67,11 @@ public class PostDAOImpl implements PostDAO{
 	
 	
 	@Override
+	public void updateViewCnt(Integer postId) throws Exception {
+		session.update(namespace+".updateViewCnt", postId);
+	}
+	
+	@Override
 	public List<PostVO> listSearch(SearchCriteria cri) throws Exception{
 		
 		return session.selectList(namespace + ".listSearch", cri);

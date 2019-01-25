@@ -132,7 +132,8 @@ where postId > 0
 <include refid="search"></include>
 </select>
 
-
-
+<update id="updateViewCnt">
+update tbl_post set viewcnt = viewcnt + 1 where postId = #{postId}
+</update>
 
 </mapper>

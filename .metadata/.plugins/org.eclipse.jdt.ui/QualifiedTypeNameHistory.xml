@@ -16,4 +16,6 @@
 <fullyQualifiedTypeName name="org.apache.log4j.spi.LoggerFactory"/>
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="org.jiyunkim1.domain.SearchCriteria"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Isolation"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 </qualifiedTypeNameHistroy>

@@ -125,7 +125,6 @@ var result='${msg}';
 if(result=='SUCCESS') {
 	alert("Successfully Updated.");
 }
-
 </script>
 <script>
 $(document).ready(
