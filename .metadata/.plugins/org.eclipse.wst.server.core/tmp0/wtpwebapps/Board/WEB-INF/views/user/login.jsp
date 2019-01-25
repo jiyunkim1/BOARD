@@ -27,7 +27,7 @@
 <body class="login-page">
 <div class="login-box">
 <div class="login-logo">
-<a href = "/"><b>Board</b>Project</a>
+<a href = "/"><b>Board Project</b></a>
 </div><!--/.login-logo -->
 
 <div class="login-box-body">
