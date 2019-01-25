@@ -21,11 +21,28 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<beans:bean id="loginInterceptor" class="org.jiyunkim1.interceptor.LoginInterceptor"></beans:bean>
+	
+	
+	<interceptors>
+	<!-- 
+	<interceptor>
+	<mapping path="/user/login" />
+	<beans:ref bean="rsaInterceptor" />
+	</interceptor>
+	 -->
+	<interceptor>
+	<mapping path="/user/loginPost"/>
+	<beans:ref bean="loginInterceptor"/>
+	</interceptor>
+	</interceptors>
+	
 	<context:component-scan base-package="org.jiyunkim1.controller" />
 	<context:component-scan base-package="org.jiyunkim1.domain" />
 	<context:component-scan base-package="org.jiyunkim1.persistence" />
 	<context:component-scan base-package="org.jiyunkim1.service" />
-	
+	<context:component-scan base-package="org.jiyunkim1.interceptor" />
+	<context:component-scan base-package="org.jiyunkim1.dto" />
 	
 	
 </beans:beans>
