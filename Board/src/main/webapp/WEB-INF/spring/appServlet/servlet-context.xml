@@ -21,6 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<beans:bean id="authInterceptor" class="org.jiyunkim1.interceptor.AuthInterceptor"></beans:bean>
 	<beans:bean id="loginInterceptor" class="org.jiyunkim1.interceptor.LoginInterceptor"></beans:bean>
 	
 	
@@ -34,6 +35,13 @@
 	<interceptor>
 	<mapping path="/user/loginPost"/>
 	<beans:ref bean="loginInterceptor"/>
+	</interceptor>
+	
+	<interceptor>
+	<mapping path="/spost/register"/>
+	<mapping path="/spost/modifyPage"/>
+	<mapping path="/spost/removePage"/>
+	<beans:ref bean="authInterceptor"/>
 	</interceptor>
 	</interceptors>
 	

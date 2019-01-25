@@ -27,7 +27,7 @@ placeholder="Enter..."></textarea>
 </div>
 <div class="form-group">
 <label for="exampleInputEmail1">WRITER</label> <input type="text" 
-name="userId" class="form-control" placeholder="Enter user ID">
+name="userId" class="form-control" value='${login.userId}' readonly>
 </div>
 </div>
 <!-- /.box-body -->

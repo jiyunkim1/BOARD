@@ -41,7 +41,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="/spost/list" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>B</b>PJ</span>
       <!-- logo for regular state and mobile devices -->
@@ -51,12 +51,14 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
+      <%--
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
+      --%>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -168,7 +170,7 @@
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="/resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="/resources/dist/img/user-avatar.jpg" class="img-circle" alt="User Image">
 
                 <p>Jiyun Kim</p>
               </li>

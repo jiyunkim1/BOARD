@@ -44,10 +44,18 @@
   </div><!-- /.box-body -->
 
   <div class="box-footer">
+  
+  <div><hr></div>
+  
+  <ul class="mailbox-attachments clearfix uploadedList"></ul>
+  
+   <c:if test="${login.userId == postVO.userId}">
     <button type="submit" class="btn btn-warning modifyBtn">MODIFY</button>
     <button type="submit" class="btn btn-danger removeBtn">REMOVE</button>
+  </c:if>
     <button type="submit" class="btn btn-primary goListBtn">GO TO LIST </button>
   </div>
+
 
 
 <script>

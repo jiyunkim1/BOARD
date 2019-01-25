@@ -41,7 +41,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/spost/list" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>B</b>PJ</span>
       <!-- logo for regular state and mobile devices -->
@@ -63,6 +63,7 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
+          <%-- 
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -97,7 +98,6 @@
             </ul>
           </li>
           <!-- /.messages-menu -->
-
           <!-- Notifications Menu -->
           <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
@@ -158,6 +158,7 @@
               </li>
             </ul>
           </li>
+          --%>
           <!-- User Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
@@ -176,6 +177,7 @@
               </li>
               <!-- Menu Body -->
               <li class="user-body">
+              <%-- 
                 <div class="row">
                   <div class="col-xs-4 text-center">
                     <a href="#">Followers</a>
@@ -188,6 +190,7 @@
                   </div>
                 </div>
                 <!-- /.row -->
+                --%>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -271,8 +274,6 @@
         <small>Post something!</small>
       </h1>
       <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
-      <li><a href="#">Forms</a></li>
-      <li class="active">General Elements</li>
+      <li><a href="spost/list"><i class="fa fa-dashboard"></i>Home</a></li>
       </ol>
     </section>
