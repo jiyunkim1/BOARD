@@ -11,6 +11,13 @@ select userId, userpw, username from tbl_user where userId = #{userId} and userp
 
 </select>
 
+<insert id="createUser">
+
+insert into tbl_user(userId, userpw, username) 
+values(#{userId}, #{userpw}, #{username})
+
+</insert>
+
 <!-- 
 <update id="keepLogin">
 update tbl_user set sessionKey = #{sessionId}, sessionLimit = #{next} where userId = #{userId}

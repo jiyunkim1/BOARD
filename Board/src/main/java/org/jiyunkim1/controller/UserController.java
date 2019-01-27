@@ -35,5 +35,21 @@ public class UserController {
 		
 		model.addAttribute("UserVO", vo);
 	}
+	
+	@RequestMapping(value="/signup", method=RequestMethod.GET)
+	public String signUpGET() {
+		
+		return "user/signup";
+	}
+	
+	
+	@RequestMapping(value="/signup", method=RequestMethod.POST)
+	public void signUpPOST(UserVO user) throws Exception{
+		
+		service.signup(user);
+
+	}
+	
+
 
 }
