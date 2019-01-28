@@ -75,7 +75,7 @@ public class UserController {
 		if(obj != null) {
 			UserVO vo = (UserVO) obj;
 			
-			session.removeAttribute("login");;
+			session.removeAttribute("login");
 			session.invalidate();
 			
 			Cookie loginCookie = WebUtils.getCookie(request, "loginCookie");

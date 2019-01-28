@@ -124,6 +124,7 @@ ${postVO.postTitle}</a></td>
 var result='${msg}';
 if(result=='SUCCESS') {
 	alert("Successfully Updated.");
+	location.replace(self.location);
 }
 </script>
 <script>

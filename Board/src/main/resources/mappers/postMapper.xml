@@ -109,18 +109,13 @@ from tbl_post
 where postId > 0
 ]]>
 
-
-<![CDATA[
-order by postId desc
-limit #{pageStart}, #{perPageNum}
-]]>
-
 <include refid="search"></include>
 
 <![CDATA[
 order by postId desc
 limit #{pageStart}, #{perPageNum}
 ]]>
+
 </select>
 
 <select id="listSearchCount" resultType="int">
