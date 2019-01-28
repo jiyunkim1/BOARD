@@ -1,5 +1,7 @@
 package org.jiyunkim1.service;
 
+import java.util.Date;
+
 import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
 
@@ -24,6 +26,19 @@ public class UserServiceImpl implements UserService {
 	public void signup(UserVO vo) throws Exception{
 		
 		dao.createUser(vo);
+	}
+	
+	@Override
+	public void keepLogin(String userId, String sessionId, Date next)
+	throws Exception{
+		
+		dao.keepLogin(userId,  sessionId, next);
+	}
+	
+	@Override
+	public UserVO checkLoginBefore(String value) {
+		
+		return dao.checkUserWithSessionKey(value);
 	}
 
 	

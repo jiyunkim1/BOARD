@@ -48,6 +48,19 @@ public class AuthInterceptor extends HandlerInterceptorAdapter{
 			logger.info("You are not logged in.");
 			saveDest(request);
 			
+			Cookie loginCookie = WebUtils.getCookie(request,"loginCookie");
+			
+			if(loginCookie != null) {
+				UserVO userVO = service.checkLoginBefore(loginCookie.getValue());
+				
+				logger.info("USERVO : " + userVO);
+				
+				if(userVO != null) {
+					session.setAttribute("login",  userVO);
+					return true;
+				}
+			}
+			
 			response.sendRedirect("/user/login");
 			return false;
 		}

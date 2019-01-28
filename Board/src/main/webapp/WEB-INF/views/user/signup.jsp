@@ -31,9 +31,9 @@
 </div><!--/.login-logo -->
 
 <div class="login-box-body">
-<p class="login-box-msg" style="font-size:150%;">Sign in to start!</p>
+<p class="login-box-msg" style="font-size:150%;">Sign up to start!</p>
 
-<form method="post" action="user/login">
+<form method="POST">
 
 <div class="form-group has-feedback">
 <label for="userId">ID</label>

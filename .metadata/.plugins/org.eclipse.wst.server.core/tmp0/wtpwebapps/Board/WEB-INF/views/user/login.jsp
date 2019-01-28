@@ -55,11 +55,14 @@
 <button type="submit" class="btn btn-primary btn btn-block btn-flat">Sign In</button>
 </div><!-- /.col -->
 </div>
+<div class="row">
+<a href = "signup" style="margin-left:20px;">Don't have an account yet? sign up here</a>
+</div>
+</div>
+
 
 </form>
 </div>
 </div>
-
-
 
 </html>
