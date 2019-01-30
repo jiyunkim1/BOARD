@@ -53,7 +53,8 @@
     <button type="submit" class="btn btn-warning modifyBtn">MODIFY</button>
     <button type="submit" class="btn btn-danger removeBtn">REMOVE</button>
   </c:if>
-    <button type="submit" class="btn btn-primary goListBtn">GO TO LIST </button>
+    <button type="submit" class="btn btn-primary goListBtn">GO TO LIST</button>
+    <%-- <button type="submit" class="btn btn-success replyBtn">REPLY</button>--%>
   </div>
 
 

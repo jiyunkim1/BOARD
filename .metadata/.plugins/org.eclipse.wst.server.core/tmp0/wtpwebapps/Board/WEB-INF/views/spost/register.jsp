@@ -29,6 +29,7 @@ placeholder="Enter..."></textarea>
 <label for="exampleInputEmail1">WRITER</label> <input type="text" 
 name="userId" class="form-control" value='${login.userId}' readonly>
 </div>
+<input type='hidden' name="repGroup" class="form-control" value='${postVO.postId}'>
 </div>
 <!-- /.box-body -->
 

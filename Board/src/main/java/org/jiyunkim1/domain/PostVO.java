@@ -10,6 +10,9 @@ public class PostVO {
 	private Date postDate;
 	private String postContent;
 	private int viewcnt;
+	private Integer repGroup;
+	private int repOrder;
+	private int repIndent;
 	
 	
 	public Integer getPostId() {
@@ -47,6 +50,25 @@ public class PostVO {
 	}
 	public void setViewcnt(int viewcnt) {
 		this.viewcnt = viewcnt;
+	}
+	
+	public Integer getRepGroup() {
+		return repGroup;
+	}
+	public void setRepGroup(Integer repGroup) {
+		this.repGroup = repGroup;
+	}
+	public int getRepOrder() {
+		return repOrder;
+	}
+	public void setRepOrder(int repOrder) {
+		this.repOrder = repOrder;
+	}
+	public int getRepIndent() {
+		return repIndent;
+	}
+	public void setRepIndent(int repIndent) {
+		this.repIndent = repIndent;
 	}
 	
 	@Override

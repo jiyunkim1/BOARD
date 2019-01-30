@@ -40,7 +40,7 @@ public class UserDAOImpl implements UserDAO {
 		paramMap.put("sessionId", sessionId);
 		paramMap.put("next", next);
 		
-		session.update(namespace+" .keepLogin", paramMap);
+		session.update(namespace+".keepLogin", paramMap);
 	}
 	
 	@Override

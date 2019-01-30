@@ -46,13 +46,6 @@
 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
 </div>
 
-<!--Check Password
-<div class="form-group has-feedback">
-<label for="userpw">CHECK PW</label>
-<input type="password" class="form-control" id="userpw" name="userpw" placeholder="Confirm Password" required>
-<span class="glyphicon glyphicon-lock form-control-feedback"></span>
-</div>
- -->
  
 <!--userName-->
 <div class="form-group">

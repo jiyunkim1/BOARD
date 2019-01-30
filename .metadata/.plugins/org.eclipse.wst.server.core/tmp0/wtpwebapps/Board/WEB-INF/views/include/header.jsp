@@ -76,6 +76,11 @@
               <!-- The user image in the menu -->
               <li class="user-header">
                 <img src="/resources/dist/img/user-avatar.jpg" class="img-circle" alt="User Image">
+                <c:if test="${not empty login}">
+                <p style="font-size:200%;">
+                      ${login.username}
+                    </p>
+                    </c:if>
               </li>
               </li>
               <!-- Menu Footer-->
@@ -160,7 +165,4 @@
         Bulletin Board
         <small>Post something!</small>
       </h1>
-      <ol class="breadcrumb">
-      <li><a href="spost/list"><i class="fa fa-dashboard"></i>Home</a></li>
-      </ol>
     </section>
