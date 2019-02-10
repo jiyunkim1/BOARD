@@ -11,8 +11,8 @@ public class PostVO {
 	private String postContent;
 	private int viewcnt;
 	private Integer repGroup;
-	private int repOrder;
-	private int repIndent;
+	private Integer repOrder;
+	private Integer repIndent;
 	
 	
 	public Integer getPostId() {
@@ -61,13 +61,13 @@ public class PostVO {
 	public int getRepOrder() {
 		return repOrder;
 	}
-	public void setRepOrder(int repOrder) {
+	public void setRepOrder(Integer repOrder) {
 		this.repOrder = repOrder;
 	}
 	public int getRepIndent() {
 		return repIndent;
 	}
-	public void setRepIndent(int repIndent) {
+	public void setRepIndent(Integer repIndent) {
 		this.repIndent = repIndent;
 	}
 	

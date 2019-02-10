@@ -55,9 +55,9 @@
   </c:if>
     <button type="submit" class="btn btn-primary goListBtn">GO TO LIST</button>
     <%-- <button type="submit" class="btn btn-success replyBtn">REPLY</button>--%>
+    <input type="button" value="REPLY" class = "btn btn-success" name="registerBtn" onclick = "location.href='/spost/reply'"></input>
   </div>
-
-
+  
 
 <script>
 $(document).ready(function(){

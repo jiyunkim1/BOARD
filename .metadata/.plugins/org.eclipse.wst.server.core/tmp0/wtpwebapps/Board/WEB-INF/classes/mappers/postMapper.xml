@@ -10,6 +10,18 @@ insert into tbl_post (postTitle, postContent, userId, repGroup)
 values(#{postTitle}, #{postContent}, #{userId}, #{repGroup})
 </insert>
 
+<update id="updateGroup">
+update tbl_post set repGroup=postId;
+</update>
+
+<update id="updateReply">
+update tbl_post set repOrder=repOrder+1
+</update>
+
+<insert id="reply">
+insert into tbl_post (postTitle, postContent, userId)
+values(#{postTitle}, #{postContent}, #{userId})
+</insert>
 
 <select id="read" resultType="org.jiyunkim1.domain.PostVO">
 select

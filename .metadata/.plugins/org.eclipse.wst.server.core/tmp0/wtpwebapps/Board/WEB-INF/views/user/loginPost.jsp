@@ -7,6 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<script>
+var result='${msg}';
+if(result=='SUCCESS') {
+	alert("Login Successful.");
+	location.replace(self.location);
+}
+else{
+	alert("Login Failed.Try again");
+}
+</script>
 <script type="text/javascript">
 self.location="/spost/list";
 </script>

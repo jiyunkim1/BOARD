@@ -107,6 +107,24 @@ public class SearchPostController {
 
 	    return "redirect:/spost/list";
 	  }
+	  
+	  @RequestMapping(value = "/reply", method = RequestMethod.GET)
+	  public void replyGET()throws Exception {
+		  
+		  logger.info("reply to post.........");
+	  }
+	  
+	  @RequestMapping(value="/reply", method = RequestMethod.POST)
+	  public String replyPOST(PostVO post, RedirectAttributes rttr)throws Exception{
+		  
+		  logger.info("reply to post.........");
+		  logger.info(post.toString());
+		 
+		  service.reply(post);
+		  
+		  rttr.addFlashAttribute("msg, 'SUCCESS");
+		  return "redirect:/spost/list";
+	  }
 
 	  // @RequestMapping(value = "/list", method = RequestMethod.GET)
 	  // public void listPage(@ModelAttribute("cri") SearchCriteria cri,

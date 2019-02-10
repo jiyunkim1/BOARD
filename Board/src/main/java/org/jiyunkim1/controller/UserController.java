@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
 import org.jiyunkim1.domain.UserVO;
 import org.jiyunkim1.dto.LoginDTO;
@@ -31,9 +32,11 @@ public class UserController {
 	}
 	
 	@RequestMapping(value= "/loginPost", method=RequestMethod.POST)
-	public void loginPOST(LoginDTO dto, HttpSession session, Model model) throws Exception{
+	public void loginPOST(LoginDTO dto, HttpSession session, Model model, RedirectAttributes rttr) throws Exception{
 		
 		UserVO vo = service.login(dto);
+		
+		rttr.addFlashAttribute("msg", "SUCCESS");
 		
 		if(vo == null) {
 			return;

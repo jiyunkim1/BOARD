@@ -10,6 +10,8 @@ public interface PostService {
 	
 	public void register(PostVO post)throws Exception;
 	
+	public abstract void reply(PostVO post)throws Exception;
+	
 	public PostVO read(Integer postId)throws Exception;
 	
 	public void modify(PostVO post)throws Exception;

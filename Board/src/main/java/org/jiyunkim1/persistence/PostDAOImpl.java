@@ -24,6 +24,20 @@ public class PostDAOImpl implements PostDAO{
 	}
 	
 	@Override
+	public void updateGroup(PostVO vo) {
+		session.update(namespace+".updateGroup", vo);
+	}
+	
+	@Override
+	public void reply(PostVO vo) {
+		session.insert(namespace+".reply", vo);
+	}
+	
+	public void updateReplyGroup(PostVO vo) {
+		session.update(namespace+".updateReply", vo);
+	}
+	
+	@Override
 	public PostVO read(Integer postId) {
 		return session.selectOne(namespace+".read", postId);
 	}
