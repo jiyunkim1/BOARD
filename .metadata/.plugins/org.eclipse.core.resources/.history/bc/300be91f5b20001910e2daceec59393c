@@ -1,5 +1,0 @@
-package org.jiyunkim1.interceptor;
-
-public class LoginInterceptor {
-
-}
